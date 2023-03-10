@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.text-comum {
+    font-weight: normal;
+    color: var(--color3);
+}
+
+:root {
+    --color1: hsl(185, 75%, 39%);
+    --color2: hsl(229, 23%, 23%);
+    --color3: hsl(227, 10%, 46%);
+    --color4: hsl(0, 0%, 59%);
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    background-color: var(--color1);
+    background-image: url(./images/bg-pattern-bottom.svg), url(./images/bg-pattern-top.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: 600px 400px, -25px -350px;
+    background-size: cover, contain;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 375px){
+    body {
+        background-position: 60px 400px, -120px -100px;
+    }
+}
+.main {
+    color: var(--color2);
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+.bg-top img {
+    border-radius: 20px 20px 0 0;
+}
+
+.bg-top {
+    height: 140px;
+}
+
+.info-content {
+    background-color: #fff;
+    border-radius: 0 0 20px 20px;
+    position: relative;
+}
+
+.p-information {
+    padding: 70px 0px 15px;
+    border-bottom: 0.1px solid hsl(0, 0%, 59%);
+}
+
+.p-information img {
+    border: 5px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: -53px;
+    left: 125px;
+}
+
+.age {
+    margin-left: 5px;
+}
+
+.city {
+    display: inline-block;
+    font-size: 1rem;
+    padding: 5px;
+}
+
+.social-information {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+
+}
+
+.number {
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+
+.text-number {
+    display: inline-block;
+    font-size: 0.8rem;
+}
